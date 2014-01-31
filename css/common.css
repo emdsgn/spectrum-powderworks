@@ -18,6 +18,11 @@ section {
   margin-top: -6em;
 }
 
+.body {
+  font-family: trebuchet, sans-serif;
+
+}
+
 header {  /*This fixes the nav at the top, and determines the nav color*/
   display: inline-block;
   background-color: #272d50;
@@ -81,6 +86,7 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
 .nav a:focus,
 .nav a:active {
   padding: 17px;
+  text-transform: uppercase;
 }
 
 .nav ul {
@@ -131,9 +137,42 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
   max-height: 14rem;
 }
 
+/* SKIPLINKS */
+.skiplinks {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
+
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  list-style-type: none;
+
+}
+
+.skiplinks a,
+.skiplinks a:link,
+.skiplinks a:visited {
+  padding: 0.5em 0.75em;
+  position:absolute;
+  top: -10em;
+
+  background-color: #000;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.skiplinks a:focus {
+  top: 0;
+}
+
+/* CONTENT */
 h2 {
   font-family: 'Sanchez', sans-serif;
-  line-height: 0px;
+  line-height: 0.9em;
 }
 
 .about-us {
@@ -146,11 +185,21 @@ h2 {
 
 .the-shop img {
   border: solid 2px #c1cf00;
+  padding: 0;
 }
 
 .the-shop li {
   padding-bottom: 0.8em;
   list-style-type: none;
+}
+
+.the-shop a,
+.the-shop a:link,
+.the-shop a:visited {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  border-bottom: dotted 1px #000000;
+  text-decoration: none;
 }
 
 footer {
