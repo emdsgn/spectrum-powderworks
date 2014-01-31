@@ -1,5 +1,4 @@
 .grid {
-  letter-spacing: -0.31em;
   *letter-spacing: normal;
   *word-spacing: -0.43em;
   text-rendering: optimizespeed;
@@ -20,7 +19,8 @@
   padding: 0;
 }
 .unit-spacer {
-  padding: 20px;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 @media only screen and (max-width: 15em) {

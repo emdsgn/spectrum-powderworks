@@ -171,16 +171,29 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
 /* CONTENT */
 h2 {
   font-family: 'Sanchez', sans-serif;
+  letter-spacing: -1px;
 }
 
 .body {
   margin-top: -1em;
+  margin-bottom: 1.5em;
 }
 
 .about-us,
-.the-shop {
-  padding: 0;
+.the-shop,
+.price,
+.the-links {
+  padding: 1em;
   margin-bottom: -2.5em;
+}
+
+.price-btm {
+  margin-bottom: 1em;
+}
+
+.head {
+  padding: 1em;
+  margin-bottom: -2em;
 }
 
 .the-shop img {
@@ -188,18 +201,17 @@ h2 {
   padding: 0;
 }
 
-.the-shop li {
-  padding-bottom: 0.8em;
-  list-style-type: none;
-}
-
 .the-links a,
 .the-links a:link,
-.the-links a:visited {
+.the-links a:visited,
+.about-us a,
+.about-us a:link,
+.about-us a:visited {
   font-size: 0.8em;
   text-transform: uppercase;
   border-bottom: dotted 1px #000000;
   text-decoration: none;
+  line-height: 2em;
 }
 
 .gallery-img {
@@ -207,6 +219,29 @@ h2 {
   margin: 0;
   padding: 0;
   border: solid 2px #c1cf00;
+}
+
+.list-1 {
+  margin: 0;
+  padding: 0;
+}
+
+.list-1 li {
+  list-style-type: none;
+}
+
+.faq-top {
+  padding-top: 4em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.ol-list {
+  margin: 0;
+  padding-bottom: 1.5em;
+  margin-top: -0.5em;
 }
 
 footer {
@@ -238,6 +273,7 @@ footer {
   font-size: 0.5em;
   letter-spacing: 0.2em;
   text-align: center;
+  padding: 1em 0 0 0;
 }
 
 @media only screen and (min-width: 30em) {
