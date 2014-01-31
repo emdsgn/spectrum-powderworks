@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0 auto;
   font-family: sans-serif;
-  background-image: url("{{site.baseurl}}/img/bg.jpg");
+  background-image: url("..{{site.baseurl}}/img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -29,7 +29,6 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
 }
 
 .header { /*This adds padding to the header*/
