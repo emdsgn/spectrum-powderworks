@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0 auto;
   font-family: sans-serif;
-  background-image: url("img/bg.jpg");
+  background-image: url("{{site.baseurl}}/img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -264,3 +264,4 @@ footer {
   .header {
     display: inline-block;
   }
+}
