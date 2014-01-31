@@ -172,15 +172,16 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
 /* CONTENT */
 h2 {
   font-family: 'Sanchez', sans-serif;
-  line-height: 0.9em;
 }
 
-.about-us {
-  padding: 1em;
+.body {
+  margin-top: -1em;
 }
 
+.about-us,
 .the-shop {
-  padding: 0 1em 1em 1em;
+  padding: 0;
+  margin-bottom: -2.5em;
 }
 
 .the-shop img {
@@ -193,9 +194,9 @@ h2 {
   list-style-type: none;
 }
 
-.the-shop a,
-.the-shop a:link,
-.the-shop a:visited {
+.the-links a,
+.the-links a:link,
+.the-links a:visited {
   font-size: 0.8em;
   text-transform: uppercase;
   border-bottom: dotted 1px #000000;
