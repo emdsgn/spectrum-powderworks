@@ -202,6 +202,13 @@ h2 {
   text-decoration: none;
 }
 
+.gallery-img {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: solid 2px #c1cf00;
+}
+
 footer {
   background-color: #272d50;
   padding: 1em;
@@ -222,6 +229,15 @@ footer {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+.copyright {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Sanchez', sans-serif;
+  font-size: 0.5em;
+  letter-spacing: 0.2em;
+  text-align: center;
 }
 
 @media only screen and (min-width: 30em) {

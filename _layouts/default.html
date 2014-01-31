@@ -2,9 +2,9 @@
 <html lang="en-ca">
 <head>
 <meta charset="utf-8">
-  <title>Spectrum Powderworks</title>
-  <link rel="stylesheet" href="css/common.css">
-  <link href="css/grid.css" rel="stylesheet">
+  <title>{% if page.title %}{{page.title}}{%endif%}{% if page.title == null %}{% endif %}</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
+  <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -18,18 +18,7 @@
 
   <section>
    <header>
-      <div class="header">
-        <a href="#nav" class="nav-btn">&#9776;</a>
-      </div>
-        <nav class="nav nav-top #navigation" data-state="closed">
-          <ul>
-            <li class="nav-btn"><a href="{{site.baseurl}}/">Home</a></li>
-            <li class="nav-btn"><a href="{{site.baseurl}}/gallery/">Gallery</a></li>
-            <li class="nav-btn"><a href="{{site.baseurl}}/price/">Pricing</a></li>
-            <li class="nav-btn"><a href="{{site.baseurl}}/faq/">Faq</a></li>
-          </ul>
-        </nav>
-      <div class="logo"><a href="{{site.baseurl}}/"><h1>Spectrum Powderworks</h1></a></div>
+      {% include nav.html %}
     </header>
   </section>
 
@@ -45,7 +34,7 @@
       <p class="foot-body">PH: 719.633.5560<br>
       FAX: 719.633.5290<br>spectrum@pcisys.net</p>
 
-      <p class="copyright">© 2013 Mansura Chowdhury.</p>
+      <p class="copyright">© 2014 Mansura Chowdhury.</p>
       </div>
     </div>
   </footer>
