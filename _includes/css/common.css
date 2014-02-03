@@ -1,3 +1,9 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 body {
   margin: 0;
   padding: 0 auto;
@@ -29,111 +35,6 @@ header {  /*This fixes the nav at the top, and determines the nav color*/
   width: 100%;
   top: 0;
   left: 0;
-}
-
-.header { /*This adds padding to the header*/
-  padding-right: 0.8em;
-}
-
-.logo { /*This fixes the width of the logo*/
-  width: 50px;
-  font-family: 'Sanchez', serif;
-  padding: 2em 0 0 0.8em;
-}
-
-.logo a,
-.logo a:link,
-.logo a:visited,
-.logo a:hover {
-  text-decoration: none;
-  color: #c1cf00;
-  letter-spacing: -1.5px;
-  font-size: 1.2em;
-}
-
-/*=================STRICTLY NAV=================*/
-
-.nav {
-  background-color: #00ACCF;
-  font-size: 1rem;
-  margin: 0 -10px;
-  overflow: hidden;
-  padding: 0;
-}
-
-.nav > ul {
-  margin: 0;
-  overflow: hidden;
-  padding: 0.8rem 0;
-
-  list-style-type: none;
-}
-
-.nav-btn {
-  display: inline-block;
-  float: right;
-  text-decoration: none;
-  color: #000;
-  background-color: #FFFFFF;
-  padding: 10px;
-}
-
-.nav a,
-.nav a:link,
-.nav a:visited,
-.nav a:hover,
-.nav a:focus,
-.nav a:active {
-  padding: 17px;
-  text-transform: uppercase;
-}
-
-.nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-
-.nav li {
-  display: block;
-  width: 100%;
-  padding: 0;
-}
-
-.nav a,
-.nav a:link,
-.nav a:visited {
-  display: block;
-  color: #000;
-  text-decoration: none;
-}
-
-.nav a:hover,
-.nav a:focus, /*activates when tabbed with keyboard*/
-.nav a:active { /*on click*/
-  color: #00ACCF;
-}
-
-.nav-top {
-  max-height: 0;
-
-  -moz-transition: all 250ms linear;
-  -o-transition: all 250ms linear;
-  -webkit-transition: all 250ms linear;
-  transition: all 250ms linear;
-}
-
-/*========JAVA SCRIPT NAV=======*/
-.nav[data-state="closed"] {
-  display: none;
-}
-
-.nav[data-state="open"] {
-  display: block;
-}
-
-.nav-top[data-state="open"] {
-  max-height: 14rem;
 }
 
 /* SKIPLINKS */
@@ -276,28 +177,70 @@ footer {
   padding: 1em 0 0 0;
 }
 
-@media only screen and (min-width: 30em) {
-  .nav-btn {
-    display: none;
+/* iPhone 4 & 5 */
+@media only screen and (min-width: 40em) {
+  .about-us,
+  .the-shop,
+  .price,
+  .the-links {
+    padding: 2em;
   }
 
-  .nav[data-state="closed"],
-  .nav li {
-    max-height: 14rem;
-    display: inline-block;
-    float: right;
+.foot-head {
+  margin: 0;
+  padding: 0.7em 0 0.7em 0;
+}
+
+.foot-body {
+  text-align: left;
+  padding: 0 0 0 3em;
+  margin: 0;
+}
+
+}
+
+/* 900 PX */
+@media only screen and (min-width: 56em) {
+  .left-pad {
+    padding-left: 14em;
   }
 
-  .nav li {
-    width: 100px;
-    text-align: center;
+  .left-pad2 {
+    padding-left: 15.6em;
   }
 
-  .nav {
-    margin: 15px;
+  .left-pad3 {
+    padding-left: 2em;
   }
 
-  .header {
-    display: inline-block;
+  .the-shop {
+    margin-bottom: -4em;
+  }
+
+  .head {
+  padding-left: 15.6em;
+  margin-bottom: -3em;
+  }
+
+}
+
+/* RESOLUTION FOR SAMSUNG TAB 2, iPad 2 & mini */
+@media only screen and (min-width: 64em) {
+  .left-pad {
+    padding-left: 15.5em;
+  }
+
+  .left-pad2 {
+    padding-left: 17.5em;
+  }
+
+  .left-pad3 {
+    padding-left: 2em;
+  }
+
+  .head {
+  padding-left: 17.5em;
   }
 }
+
+/**/

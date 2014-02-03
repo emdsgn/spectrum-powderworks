@@ -1,0 +1,229 @@
+
+/*=================STRICTLY NAV=================*/
+.header { /*This adds padding to the header*/
+  padding-right: 0.8em;
+}
+
+.logo { /*This fixes the width of the logo*/
+  width: 50px;
+  font-family: 'Sanchez', serif;
+  padding: 2em 0 0 0.8em;
+}
+
+.logo a,
+.logo a:link,
+.logo a:visited,
+.logo a:hover {
+  text-decoration: none;
+  color: #c1cf00;
+  letter-spacing: -1.5px;
+  font-size: 1.2em;
+}
+
+.l-s {
+  display: block;
+}
+
+.l-m {
+  display: none;
+}
+
+.nav {
+  font-size: 1rem;
+  margin: 0 -10px;
+  overflow: hidden;
+  padding: 0px;
+  font-family: 'Sanchez', sans-serif;
+}
+
+.nav > ul {
+  margin: 0;
+  overflow: hidden;
+  padding: 0.8rem 0;
+
+  list-style-type: none;
+}
+
+.nav-btn {
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  color: #000;
+  background-color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  padding: 17px;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav li {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus, /*activates when tabbed with keyboard*/
+.nav a:active { /*on click*/
+  color: #FFFFFF;
+  background-color: #272d50;
+}
+
+.nav-top {
+  max-height: 0;
+
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+/*========JAVA SCRIPT NAV=======*/
+.nav[data-state="closed"] {
+  display: none;
+}
+
+.nav[data-state="open"] {
+  display: block;
+}
+
+.nav-top[data-state="open"] {
+  max-height: 14rem;
+}
+
+@media only screen and (min-width: 27em) {
+    .l-s {
+   display: none;
+  }
+
+  .l-m {
+   display: block;
+  }
+
+  .logo {
+    padding: 0 0 0 0.8em;
+  }
+
+  .nav-btn {
+    display: none;
+    background-color: transparent;
+  }
+
+  .nav[data-state="closed"],
+  .nav li {
+    max-height: 14rem;
+    display: inline-block;
+  }
+
+  .nav li {
+    width: 110px;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .header {
+    display: inline-block;
+  }
+
+  .nav a,
+  .nav a:link,
+  .nav a:visited {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus, /*activates when tabbed with keyboard*/
+.nav a:active { /*on click*/
+  color: #272d50;
+  background-color: #c1cf00;
+}
+
+}
+
+/* iPhone 4 &  5 RESOLUTION */
+
+@media only screen and (min-width: 40em) {
+  .logo { /*This fixes the width of the logo*/
+   width: 60%;
+   padding: 1em;
+   float: left;
+  }
+
+  .nav[data-state="closed"],
+  .nav li {
+    padding: 1.75em 0 1.75em 0;
+    float: right;
+  }
+
+  .nav li {
+    width: 25%;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .nav {
+    margin: 0px;
+  }
+
+}
+
+/* 900 PX */
+@media only screen and (min-width: 56em) {
+  header {
+    background-color: transparent;
+  }
+
+  .logo {
+    background-color: #272d50;
+    margin-left: 10%;
+    margin-top: -6%;
+    padding-right: 1.5em;
+    width: 60%;
+  }
+
+  .nav[data-state="closed"],
+  .nav li {
+    padding: 1.75em 0 1.75em 0;
+    float: right;
+    background-color: #272d50;
+    margin-top: -3%;
+    margin-right: 4%;
+  }
+
+  .nav li {
+    width: 21%;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .nav {
+    margin: 0px;
+  }
+}

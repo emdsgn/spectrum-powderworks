@@ -3,8 +3,7 @@
 <head>
 <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}}{%endif%}{% if page.title == null %}{% endif %}</title>
-  <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
-  <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/spectrum.css">
   <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -24,20 +23,19 @@
 
   {{content}}
 
+   <div class="grid">
   <footer>
-    <div class="grid">
-      <div class="unit-s-1">
+      <div class="unit unit-s-1 unit-s-1-2-1">
       <p class="foot-head">Contact Us</p>
       </div>
 
-      <div class="unit-s-1">
+      <div class="unit unit-s-1 unit-s-1-2-1">
       <p class="foot-body">PH: 719.633.5560<br>
       FAX: 719.633.5290<br>spectrum@pcisys.net</p>
-
-      <p class="copyright">© 2014 Mansura Chowdhury.</p>
       </div>
-    </div>
+      <p class="copyright">© 2014 Mansura Chowdhury.</p>
   </footer>
+    </div>
 
   <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
   <script src="js/main.js"></script>
