@@ -243,4 +243,25 @@ footer {
   }
 }
 
-/**/
+/* 1100 PX */
+@media only screen and (min-width: 68.75em) {
+  .left-pad {
+    padding-left: 16.5em;
+  }
+
+  .left-pad2 {
+    padding-left: 18.6em;
+  }
+
+  .left-pad3 {
+    padding-left: 2em;
+  }
+
+  .head {
+  padding-left: 18.5em;
+  }
+
+  .the-shop {
+    margin-top: -2em;
+  }
+}
