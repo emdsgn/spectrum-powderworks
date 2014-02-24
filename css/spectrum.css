@@ -4,5 +4,6 @@
 {% include css/common.css %}
 {% include css/grid.css %}
 {% include css/nav.css %}
+{% include css/lightbox.css %}
 {% include css/video.css %}
 {% include css/dialog-polyfill.css %}

@@ -125,15 +125,19 @@
     background-color: transparent;
   }
 
-  .nav[data-state="closed"],
-  .nav ul {
+  .nav[data-state="closed"] {
     max-height: 14rem;
+    display: inline-block;
+  }
+
+  .nav ul {
     display: inline-block;
   }
 
   .nav li {
     width: 88px;
     font-size: 0.8em;
+    display: inline-block;
   }
 
   .nav a,
@@ -165,6 +169,7 @@
   .nav[data-state="closed"] {
     padding: 1.75em 0 1.75em 0;
     float: right;
+    display: inline-block;
   }
 
   .nav li {
