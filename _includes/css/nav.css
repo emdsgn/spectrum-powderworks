@@ -46,7 +46,6 @@
 
 .nav-btn {
   display: inline-block;
-  float: right;
   text-decoration: none;
   color: #000;
   background-color: #FFFFFF;
@@ -168,7 +167,6 @@
 
   .nav[data-state="closed"] {
     padding: 1.75em 0 1.75em 0;
-    float: right;
     display: inline-block;
   }
 
@@ -201,9 +199,9 @@
 
   .nav[data-state="closed"] {
     padding: 1.52em 0 1.52em 0;
-    float: right;
     margin-top: 0 auto;
     margin-right: 4%;
+    display: inline-block;
 
   }
 
